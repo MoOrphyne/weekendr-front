@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  destination_name: MyString
+  transport_price: MyString
+  photo_link: MyString
+
+two:
+  destination_name: MyString
+  transport_price: MyString
+  photo_link: MyString

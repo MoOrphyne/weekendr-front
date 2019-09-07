@@ -1,2 +1,28 @@
-<h1>Yop Congrats!</h1>
+<div class="container">
+  <h1>Yop Congrats!</h1>
+</div>
+<div class="all-cards container">
+  <% @destinations.each do |id, destination| %>
+    <div class="destination-card">
+        <div class="destination-info">
+          <h2><%= destination[:destination_name] %></h2>
+          <li>Transport :<%= destination[:transport_price] %></li>
+          <li>Bananes :<%= destination[:banana_price] %>/kg</li>
+          <li>Eau :<%= destination[:water_price] %>/1,5L</li>
+        </div>
+      <div class="bg">
+        <div class="destination-image">
+          <%= image_tag destination[:photo_link] %>
+        </div>
 
+        <div class="bg-svg">
+          <svg class="svg-sep" viewBox="0 0 46 211" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0H46L0 211V0Z" fill="#F5F5F5"/>
+          </svg>
+        </div>
+      </div>
+
+
+      </div>
+  <% end %>
+</div>

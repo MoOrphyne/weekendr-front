@@ -2,17 +2,17 @@
   <h1>Yop Congrats!</h1>
 </div>
 <div class="all-cards container">
-  <% @destinations.each do |id, destination| %>
+  <% @destinations.each do |destination| %>
     <div class="destination-card">
         <div class="destination-info">
-          <h2><%= destination[:destination_name] %></h2>
-          <li>Transport :<%= destination[:transport_price] %></li>
-          <li>Bananes :<%= destination[:banana_price] %>/kg</li>
-          <li>Eau :<%= destination[:water_price] %>/1,5L</li>
+          <h2><%= destination.destination_name %></h2>
+          <li><%= destination.transport_price %></li>
+          <li><%= destination.banana_price %></li>
+          <li><%= destination.water_price %></li>
         </div>
       <div class="bg">
         <div class="destination-image">
-          <%= image_tag destination[:photo_link] %>
+          <%= image_tag destination.photo_link %>
         </div>
 
         <div class="bg-svg">

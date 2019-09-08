@@ -16,9 +16,9 @@
     <div class="destination-card grow">
         <div class="destination-info">
           <h2 id="destination-name"><%= destination.destination_name %></h2>
-          <p id="transport-price" class="data"><%= destination.transport_price %></p>
-          <p id="banana-price" class="data hide"><%= destination.banana_price %></p>
-          <p id="water-price" class="data hide"><%= destination.water_price %></p>
+          <p id="transport-price" class="data"><%= destination.transport_price.last(6) %></p>
+          <p id="banana-price" class="data hide"><%= destination.banana_price.last(6) %></p>
+          <p id="water-price" class="data hide"><%= destination.water_price.last(6) %></p>
         </div>
       <div class="bg">
         <div class="destination-image">

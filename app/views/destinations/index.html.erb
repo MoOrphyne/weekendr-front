@@ -5,9 +5,9 @@
 <div class="dropdown">
   <button class="dropbtn">Filter</button>
   <div class="dropdown-content">
-    <a href="#" id="banana_price">Banana</a>
-    <a href="#" id="water_price">Water</a>
-    <a href="#" id="transport_price">Transport Price</a>
+    <a href="#" id="banana">Banana</a>
+    <a href="#" id="water">Water</a>
+    <a href="#" id="transport">Transport Price</a>
   </div>
 </div>
 
@@ -16,9 +16,9 @@
     <div class="destination-card grow">
         <div class="destination-info">
           <h2 id="destination-name"><%= destination.destination_name %></h2>
-          <p id="transport-price"><%= destination.transport_price %></p>
-          <p id="banana-price"><%= destination.banana_price %></p>
-          <p id="water-price"><%= destination.water_price %></p>
+          <p id="transport-price" class="show"><%= destination.transport_price %></p>
+          <p id="banana-price" class="hide"><%= destination.banana_price %></p>
+          <p id="water-price" class="hide"><%= destination.water_price %></p>
         </div>
       <div class="bg">
         <div class="destination-image">

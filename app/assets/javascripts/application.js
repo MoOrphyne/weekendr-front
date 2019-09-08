@@ -13,3 +13,11 @@
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
+var bananaPrice = document.querySelector('#banana');
+var waterPrice = document.querySelector('#water');
+var transportPrice = document.querySelector('#transport');
+
+if on click id= banana_price
+  then add class show for #banana-price
+  add class hide for #transport-price
+  add class hide for #water price

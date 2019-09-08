@@ -1,27 +1,48 @@
 <div class="container-all">
   <h1>Bon-plans</h1>
 </div>
-
+<!-- Dropdown -->
 <div class="dropdown">
   <button class="dropbtn">Filtre</button>
   <div class="dropdown-content">
     <a class="filter" id="banana">Bananes</a>
+    <a class="filter" id="beer">Bière</a>
     <a class="filter" id="capuccino">Cappuccino</a>
     <a class="filter" id="water">Eau</a>
     <a class="filter" id="transport">Transport</a>
   </div>
 </div>
-
+<!-- All cards  -->
 <div class="all-cards container-all">
   <% @destinations.each do |destination| %>
     <div class="destination-card grow">
         <div class="destination-info">
           <h2 id="destination-name"><%= destination.destination_name %></h2>
-          <p id="transport-price" class="data"><%= image_tag "train-ticket.svg", class: "info-icon" %> <%= destination.transport_price.last(6) %></p>
-          <p id="banana-price" class="data hide"><%= image_tag "banana.svg", class: "info-icon" %> <%= destination.banana_price.last(6) %><span class="mass-type">/kg</span></p>
-          <p id="water-price" class="data hide"><%= image_tag "water.svg", class: "info-icon" %> <%= destination.water_price.last(6) %><span class="mass-type">/1,5L</span></p>
-          <p id="capuccino-price" class="data hide"><%= image_tag "cappuccino.svg", class: "info-icon" %> <%= destination.capuccino_price.last(6) %><span class="mass-type"></span></p>
+          <p id="transport-price" class="data">
+            <%= image_tag "train-ticket.svg", class: "info-icon" %>
+            <%= destination.transport_price.last(6) %>
+          </p>
+          <p id="banana-price" class="data hide">
+            <%= image_tag "banana.svg", class: "info-icon" %>
+            <%= destination.banana_price.last(6) %>
+            <span class="mass-type">/kg</span>
+          </p>
+          <p id="water-price" class="data hide">
+            <%= image_tag "water.svg", class: "info-icon" %>
+            <%= destination.water_price.last(6) %>
+            <span class="mass-type">/1,5L</span>
+          </p>
+          <p id="capuccino-price" class="data hide">
+            <%= image_tag "cappuccino.svg", class: "info-icon" %>
+            <%= destination.capuccino_price.last(6) %>
+          </p>
+          <p id="beer-price" class="data hide">
+            <%= image_tag "pint.svg", class: "info-icon" %>
+            <%= destination.beer_price.last(6) %>
+            <span class="mass-type">/0.5L</span>
+          </p>
         </div>
+
       <div class="bg">
         <div class="destination-image">
           <%= image_tag destination.photo_link %>
@@ -33,7 +54,6 @@
           </svg>
         </div>
       </div>
-
 
     </div>
   <% end %>

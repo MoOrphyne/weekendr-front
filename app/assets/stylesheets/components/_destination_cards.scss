@@ -39,7 +39,7 @@
 .destination-info {
   position: absolute;
   z-index: 10;
-  width: 200px;
+  width: 350px;
   padding: 16px;
   h2 {
     transition: all .4s ease;
@@ -58,7 +58,7 @@
     // color: #A5A5A5;
     font-size: 20px;
     color: white;
-    width: 82%;
+    width: 30%;
     font-size: 20px;
     border-radius: 20px;
     padding: 8px 0px;
@@ -102,9 +102,7 @@
   }
 }
 
-.show {
-  display: block;
-}
+// info hide/show
 .hide {
   display: none;
 }

@@ -1,9 +1,11 @@
 @import "destination_cards";
+@import "header";
+@import "dropdown";
 
-.container {
+.container-all {
   width: 100%;
 }
 body {
-  background: lightgray;
+  background: #F1F1F1;
   font-family: 'Source Sans Pro', sans-serif;
 }

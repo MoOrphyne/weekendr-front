@@ -1,14 +1,24 @@
-<div class="container">
-  <h1>Yop Congrats!</h1>
+<div class="container-all">
+  <h1>Bons plans</h1>
 </div>
-<div class="all-cards container">
+
+<div class="dropdown">
+  <button class="dropbtn">Filter</button>
+  <div class="dropdown-content">
+    <a href="#" id="banana_price">Banana</a>
+    <a href="#" id="water_price">Water</a>
+    <a href="#" id="transport_price">Transport Price</a>
+  </div>
+</div>
+
+<div class="all-cards container-all">
   <% @destinations.each do |destination| %>
-    <div class="destination-card">
+    <div class="destination-card grow">
         <div class="destination-info">
-          <h2><%= destination.destination_name %></h2>
-          <p><%= destination.transport_price %></p>
-          <p><%= destination.banana_price %></p>
-          <p><%= destination.water_price %></p>
+          <h2 id="destination-name"><%= destination.destination_name %></h2>
+          <p id="transport-price"><%= destination.transport_price %></p>
+          <p id="banana-price"><%= destination.banana_price %></p>
+          <p id="water-price"><%= destination.water_price %></p>
         </div>
       <div class="bg">
         <div class="destination-image">

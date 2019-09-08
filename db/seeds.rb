@@ -22,7 +22,7 @@ Destination.create(destination_name: "Amsterdam", photo_link: "https://images.ki
 puts "destination 7 done"
 Destination.create(destination_name: "Dublin", photo_link: "https://images.kiwi.com/photos/600x600/dublin_ie.jpg")
 puts "destination 8 done"
-Destination.create(destination_name: "Paris", photo_link: "https://res.cloudinary.com/hzekpb1cg/image/upload/c_fill,h_410,w_800,f_auto/s3/public/prod/2019-02/Paris.jpg")
+Destination.create(destination_name: "Paris", photo_link: "https://d39gusjpdm7p1o.cloudfront.net/data/layout_grouping/static_page_step/20784_a330628091ede7eb1548d6cda58e0357.jpg?ver=1477297804")
 puts "destination 9 done"
 
 Destination.pluck(:destination_name).each do |city|

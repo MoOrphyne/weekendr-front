@@ -3,17 +3,25 @@
   justify-content: center;
   flex-wrap: wrap;
 }
-
+// 1 card
 .destination-card {
   width: 350px;
   height: 200px;
   border-radius: 30px;
   overflow: hidden;
   margin: 16px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .15);
+  transition: all .2s ease;
 }
 .bg {
   display: flex;
   height: 100%;
+}
+.bg-svg {
+  transition: all .3s ease;
+  transition-delay: .2s;
+  z-index: 5;
+  width: 55%;
 }
 .destination-image {
   width: 350px;
@@ -25,23 +33,55 @@
     height: 100%;
     object-fit: cover;
     border-radius: 30px;
+    transition: all 6s ease-out;
   }
-}
-.bg-svg {
-  z-index: 30;
-  width: 55%;
 }
 .destination-info {
+  transition: all .4s ease;
   position: absolute;
-  z-index: 85;
-  width: 150px;
+  z-index: 10;
+  width: 200px;
   padding: 16px;
   h2 {
-    margin-top: 0;
+    font-weight: bolder;
+    transition-delay: .2s;
+    margin: 0;
     font-size: 32px;
+    color: #565656;
   }
   p {
+    transition: all .1s ease-in-out;
     margin: 0;
-    color: gray;
+    color: #A5A5A5;
+  }
+}
+// hover effect
+.grow {
+  transition: all .2s ease;
+}
+.grow:hover {
+  transform: scale(1.07);
+}
+.destination-card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .15);
+  .destination-image {
+    img {
+      object-position: bottom;
+      // object-fit: cover;
+    }
+  }
+  .destination-info {
+    padding-left: 80px;
+    h2 {
+      text-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+      width: 350px;
+      color: white;
+    }
+    p {
+      opacity: 0;
+    }
+  }
+  .bg-svg {
+    width: 0%;
   }
 }

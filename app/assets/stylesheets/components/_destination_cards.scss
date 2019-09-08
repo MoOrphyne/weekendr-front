@@ -37,12 +37,12 @@
   }
 }
 .destination-info {
-  transition: all .4s ease;
   position: absolute;
   z-index: 10;
   width: 200px;
   padding: 16px;
   h2 {
+    transition: all .4s ease;
     font-weight: bolder;
     transition-delay: .2s;
     margin-top: 0;
@@ -51,9 +51,24 @@
     color: #565656;
   }
   p {
-    transition: all .1s ease-in-out;
+    text-align: center;
+    transition: all .2s ease-in-out;
+    opacity: 1;
     margin: 0;
-    color: #A5A5A5;
+    // color: #A5A5A5;
+    font-size: 20px;
+    color: white;
+    width: 82%;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 8px 0px;
+    background: #0BA3E4;
+    .info-icon {
+      height: 50px;
+    }
+    .mass-type {
+      font-size: 12px;
+    }
   }
 }
 // hover effect
@@ -64,7 +79,7 @@
   transform: scale(1.07);
 }
 .destination-card:hover {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, .15);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
   .destination-image {
     img {
       object-position: bottom;
@@ -72,8 +87,8 @@
     }
   }
   .destination-info {
-    padding-left: 80px;
     h2 {
+      padding-left: 80px;
       text-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
       width: 350px;
       color: white;

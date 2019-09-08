@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_09_06_004133) do
+ActiveRecord::Schema.define(version: 2019_09_08_191745) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 2019_09_06_004133) do
     t.datetime "updated_at", null: false
     t.string "banana_price"
     t.string "water_price"
+    t.string "capuccino_price"
   end
 
 end

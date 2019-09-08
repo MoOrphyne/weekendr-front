@@ -37,7 +37,7 @@
 .dropdown-content a:hover {
   background-color: #0BA3E4;
   border-radius: 15px;
-  color: white;
+  color: white !important;
 }
 
 .dropdown:hover .dropdown-content {

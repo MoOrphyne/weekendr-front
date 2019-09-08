@@ -1,13 +1,14 @@
 <div class="container-all">
-  <h1>Bons plans</h1>
+  <h1>Bon-plans</h1>
 </div>
 
 <div class="dropdown">
-  <button class="dropbtn">Filter</button>
+  <button class="dropbtn">Filtre</button>
   <div class="dropdown-content">
-    <a class="filter" id="banana">Banana</a>
-    <a class="filter" id="transport">Transport Price</a>
-    <a class="filter" id="water">Water</a>
+    <a class="filter" id="banana">Bananes</a>
+    <a class="filter" id="capuccino">Cappuccino</a>
+    <a class="filter" id="water">Eau</a>
+    <a class="filter" id="transport">Transport</a>
   </div>
 </div>
 
@@ -16,9 +17,10 @@
     <div class="destination-card grow">
         <div class="destination-info">
           <h2 id="destination-name"><%= destination.destination_name %></h2>
-          <p id="transport-price" class="data"><%= destination.transport_price.last(6) %></p>
-          <p id="banana-price" class="data hide"><%= destination.banana_price.last(6) %></p>
-          <p id="water-price" class="data hide"><%= destination.water_price.last(6) %></p>
+          <p id="transport-price" class="data"><%= image_tag "train-ticket.svg", class: "info-icon" %> <%= destination.transport_price.last(6) %></p>
+          <p id="banana-price" class="data hide"><%= image_tag "banana.svg", class: "info-icon" %> <%= destination.banana_price.last(6) %><span class="mass-type">/kg</span></p>
+          <p id="water-price" class="data hide"><%= image_tag "water.svg", class: "info-icon" %> <%= destination.water_price.last(6) %><span class="mass-type">/1,5L</span></p>
+          <p id="capuccino-price" class="data hide"><%= image_tag "cappuccino.svg", class: "info-icon" %> <%= destination.capuccino_price.last(6) %><span class="mass-type"></span></p>
         </div>
       <div class="bg">
         <div class="destination-image">
@@ -33,6 +35,6 @@
       </div>
 
 
-      </div>
+    </div>
   <% end %>
 </div>

@@ -35,7 +35,8 @@ Destination.pluck(:destination_name).each do |city|
     destination.update(
       banana_price: item.text.match(/Banana.+€/)[0],
       water_price: item.text.match(/Water.\W1.5.+€/)[0],
-      transport_price: item.text.match(/One-way Ticket.+€/)[0]
+      transport_price: item.text.match(/One-way Ticket.+€/)[0],
+      capuccino_price: item.text.match(/Cappuccino.+€/)[0]
     )
   end
 end

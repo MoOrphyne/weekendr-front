@@ -41,14 +41,19 @@
   z-index: 10;
   width: 350px;
   padding: 16px;
-  h2 {
+  #destination-name {
     transition: all .4s ease;
     font-weight: bolder;
     transition-delay: .2s;
     margin-top: 0;
-    margin-bottom: 32px;
+    margin-bottom: 0;
     font-size: 32px;
     color: #565656;
+  }
+  #country-name {
+    margin-bottom: 16px;
+    color: #A5A5A5;
+    font-size: 15px;
   }
   p {
     text-align: center;
@@ -83,15 +88,17 @@
   .destination-image {
     img {
       object-position: bottom;
-      // object-fit: cover;
     }
   }
   .destination-info {
-    h2 {
+    #destination-name {
       padding-left: 80px;
       text-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
       width: 350px;
       color: white;
+    }
+    #country-name {
+      opacity: 0;
     }
     p {
       opacity: 0;

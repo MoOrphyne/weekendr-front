@@ -1,5 +1,7 @@
 <div class="container-all">
-  <h1>Bon-plans</h1>
+  <div class="header-bg-color"></div>
+  <h1 id="page-title">Bon-Plans</h1>
+  <%= image_tag "wave.svg", class: "wave-header" %>
 </div>
 <!-- Dropdown -->
 <div class="dropdown">
@@ -18,6 +20,7 @@
     <div class="destination-card grow">
         <div class="destination-info">
           <h2 id="destination-name"><%= destination.destination_name %></h2>
+          <h6 id="country-name"><%= destination.country_name.upcase %></h6>
           <p id="transport-price" class="data">
             <%= image_tag "train-ticket.svg", class: "info-icon" %>
             <%= destination.transport_price.last(6) %>

@@ -11,6 +11,7 @@
     <a class="filter" id="beer">Bière</a>
     <a class="filter" id="capuccino">Cappuccino</a>
     <a class="filter" id="water">Eau</a>
+    <a class="filter" id="pepsi">Pepsi/Coca</a>
     <a class="filter" id="transport">Transport</a>
   </div>
 </div>
@@ -51,6 +52,12 @@
             <%= image_tag "pint.svg", class: "info-icon" %>
             <%= destination.beer_price.last(6) %>
             <span class="mass-type">/0.5L</span>
+          </p>
+
+          <p id="pepsi-price" class="data hide">
+            <%= image_tag "can.svg", class: "info-icon" %>
+            <%= destination.pepsi_price.last(6) %>
+            <span class="mass-type">/0.33L</span>
           </p>
         </div>
 

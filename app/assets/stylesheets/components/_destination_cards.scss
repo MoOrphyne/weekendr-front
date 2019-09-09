@@ -72,7 +72,7 @@
     // color: #A5A5A5;
     font-size: 20px;
     color: white;
-    width: 30%;
+    width: 32%;
     font-size: 20px;
     border-radius: 20px;
     padding: 8px 0px;
@@ -95,7 +95,7 @@
 .destination-card:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
   .destination-image {
-    img {
+    .photo_link {
       object-position: bottom;
     }
   }

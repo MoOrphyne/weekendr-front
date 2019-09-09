@@ -66,6 +66,26 @@ Destination.create(destination_name: "Moscow",
                   country_flag: "russia.svg",
                   photo_link: "https://1vu2vab7ghf47835m3t9p5zz-wpengine.netdna-ssl.com/wp-content/uploads/2013/07/Moscow-river-cruise-Russia-tour-600x600.jpg")
 puts "destination 12 done"
+Destination.create(destination_name: "Luxor-Egypt",
+                  country_name: "Egypte",
+                  country_flag: "egypt.svg",
+                  photo_link: "https://holidaymasr.com/wp-content/uploads/2018/10/Luxor-main-image-600x600.jpg")
+puts "destination 13 done"
+Destination.create(destination_name: "Tokyo",
+                  country_name: "Japon",
+                  country_flag: "japan.svg",
+                  photo_link: "http://blog.nicolinepatricia.com/wp-content/uploads/2017/10/Tokyo_Shibuya_Nicoline-Patricia-Malina_03641-600x600.jpg")
+puts "destination 14 done"
+Destination.create(destination_name: "Perth",
+                  country_name: "Australie",
+                  country_flag: "australia.svg",
+                  photo_link: "https://www.australie-van.fr/wp-av-content/uploads/2018/01/Perth-Australie-min-600x600.jpg")
+puts "destination 15 done"
+Destination.create(destination_name: "Mumbai",
+                  country_name: "Inde",
+                  country_flag: "india.svg",
+                  photo_link: "https://indiatrotter.com/wp-content/uploads/2018/11/taj_mahal-1-600x600.jpg")
+puts "destination 16 done"
 
 Destination.pluck(:destination_name).each do |city|
   puts "======= Scrapping #{city} ========="
